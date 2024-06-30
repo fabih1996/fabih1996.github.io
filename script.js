@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Event listener for clicking the left spaceship image
-    document.querySelector('.left-image').addEventListener('click', function() {
+    document.querySelector('.top-image').addEventListener('click', function() {
         videoContainer.style.display = 'flex'; // Display the video container
     });
 
     // Event listener for clicking the right spaceship image
-    document.querySelector('.right-image').addEventListener('click', function() {
+    document.querySelector('.bottom-image').addEventListener('click', function() {
         videoContainer.style.display = 'flex'; // Display the video container
     });
 });
