@@ -23,6 +23,7 @@ body {
     max-width: 600px;
     margin: auto;
     padding: 40px 20px; /* Aumenta il padding sopra e sotto per spaziare meglio le astronavi */
+    z-index: 2; /* Assicura che il contenuto sia davanti alle immagini delle astronavi */
 }
 
 .top-image, .bottom-image {
@@ -34,17 +35,17 @@ body {
 .top-image {
     top: -100px; /* Posiziona sopra la sezione .container */
     left: calc(50% - 50px); /* Centro l'immagine rispetto al centro del contenitore */
+    z-index: 1; /* Assicura che l'immagine superiore sia dietro il contenuto */
 }
 
 .bottom-image {
     bottom: -140px; /* Posiziona sotto la sezione .container in modo che sia leggermente più distante */
     left: calc(50% - 50px); /* Centro l'immagine rispetto al centro del contenitore */
+    z-index: 1; /* Assicura che l'immagine inferiore sia dietro il contenuto */
 }
 
 .content {
     margin-top: 60px; /* Spazio tra le immagini e il contenuto */
-    position: relative; /* Aggiunto per gestire lo z-index */
-    z-index: 2; /* Assicura che il contenuto sia davanti alle immagini delle astronavi */
 }
 
 h1 {
@@ -77,6 +78,7 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
+    z-index: 3; /* Assicura che il container del video sia davanti a tutto */
 }
 
 video {
@@ -92,6 +94,7 @@ video {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    z-index: 4; /* Assicura che il pulsante di chiusura del video sia davanti a tutto */
 }
 
 .close-button::before,
