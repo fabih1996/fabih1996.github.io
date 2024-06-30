@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.left-image, .right-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: auto;
+}
+
+.left-image {
+    left: -120px; /* Aggiusta questo valore secondo necessità */
+}
+
+.right-image {
+    right: -120px; /* Aggiusta questo valore secondo necessità */
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.video-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+video {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.close-button::before,
+.close-button::after {
+    content: 'X';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 24px; /* Dimensione della X */
+    text-align: center;
+    line-height: 40px; /* Centra verticalmente la X */
+    color: white; /* Colore nero per la X */
+}
+
+
+/* Centra la X nel pulsante */
+.close-button::before,
+.close-button::after {
+    top: 0;
+    left: 0;
+}
+
