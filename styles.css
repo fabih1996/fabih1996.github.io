@@ -22,7 +22,7 @@ body {
     text-align: center;
     max-width: 600px;
     margin: auto;
-    padding: 20px;
+    padding: 80px 20px; /* Aumenta il padding sopra e sotto per spaziare meglio le astronavi */
 }
 
 .top-image, .bottom-image {
@@ -32,19 +32,19 @@ body {
 }
 
 .top-image {
-    top: -120px; /* Posiziona sopra la sezione .container */
-    left: 50%;
-    transform: translateX(-50%);
+    top: -80px; /* Posiziona sopra la sezione .container */
+    left: calc(50% - 50px); /* Centro l'immagine rispetto al centro del contenitore */
 }
 
 .bottom-image {
-    bottom: -180px; /* Sposta più in basso rispetto alla versione precedente */
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: -80px; /* Posiziona sotto la sezione .container */
+    left: calc(50% - 50px); /* Centro l'immagine rispetto al centro del contenitore */
 }
 
 .content {
     margin-top: 40px; /* Spazio tra le immagini e il contenuto */
+    position: relative; /* Aggiunto per gestire lo z-index */
+    z-index: 2; /* Assicura che il contenuto sia davanti alle immagini delle astronavi */
 }
 
 h1 {
