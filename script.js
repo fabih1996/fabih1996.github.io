@@ -1,13 +1,27 @@
-document.getElementById('play-button').addEventListener('click', function() {
-    var videoContainer = document.getElementById('video-container');
-    videoContainer.style.display = 'flex';
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const videoContainer = document.getElementById('video-container');
+    const video = document.getElementById('video');
 
-document.getElementById('close-button').addEventListener('click', function() {
-    var videoContainer = document.getElementById('video-container');
-    var video = document.getElementById('video');
-    video.pause();
-    video.currentTime = 0; // Riporta il video all'inizio quando si chiude
-    videoContainer.style.display = 'none';
+    // Event listener for clicking the "Ottieni il regalo bibino" button
+    document.getElementById('play-button').addEventListener('click', function() {
+        videoContainer.style.display = 'flex'; // Display the video container
+    });
+
+    // Event listener for clicking the close button
+    document.getElementById('close-button').addEventListener('click', function() {
+        video.pause(); // Pause the video
+        video.currentTime = 0; // Reset video to beginning
+        videoContainer.style.display = 'none'; // Hide the video container
+    });
+
+    // Event listener for clicking the left spaceship image
+    document.querySelector('.left-image').addEventListener('click', function() {
+        videoContainer.style.display = 'flex'; // Display the video container
+    });
+
+    // Event listener for clicking the right spaceship image
+    document.querySelector('.right-image').addEventListener('click', function() {
+        videoContainer.style.display = 'flex'; // Display the video container
+    });
 });
 
