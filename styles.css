@@ -38,7 +38,7 @@ body {
 }
 
 .bottom-image {
-    bottom: -120px; /* Posiziona sotto la sezione .container */
+    bottom: -180px; /* Sposta più in basso rispetto alla versione precedente */
     left: 50%;
     transform: translateX(-50%);
 }
