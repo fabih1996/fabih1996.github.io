@@ -37,7 +37,7 @@ body {
 }
 
 .bottom-image {
-    bottom: -150px; /* Posiziona sotto la sezione .container in modo che sia leggermente più distante */
+    bottom: -140px; /* Posiziona sotto la sezione .container in modo che sia leggermente più distante */
     left: calc(50% - 50px); /* Centro l'immagine rispetto al centro del contenitore */
 }
 
