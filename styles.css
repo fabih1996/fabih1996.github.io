@@ -1,4 +1,4 @@
-k* {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,7 +50,9 @@ p {
     margin-bottom: 20px;
 }
 
-button {
+button#play-button {
+    display: block;
+    margin: 0 auto; /* Center the button horizontally */
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -137,7 +139,7 @@ video {
         font-size: 0.9em;
     }
 
-    button {
+    button#play-button {
         display: block; /* Ensure button is displayed */
         margin: 20px 0; /* Adjust margin as needed */
     }
