@@ -100,11 +100,39 @@ video {
     color: white; /* Colore nero per la X */
 }
 
-
 /* Centra la X nel pulsante */
 .close-button::before,
 .close-button::after {
     top: 0;
     left: 0;
+}
+
+/* Media Queries per dispositivi mobili */
+@media only screen and (max-width: 600px) {
+    .left-image, .right-image {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
 }
 
